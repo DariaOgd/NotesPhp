@@ -1,0 +1,63 @@
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.container form {
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+}
+.container form .error {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+.container form .error .alert {
+  color: #ff0000;
+  padding: 10px 20px;
+  background-color: #ffcccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.container form input {
+  border-style: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.container form .name {
+  padding-top: 3rem;
+}
+.container form .email, .container form .password, .container form .name {
+  width: 50%;
+}
+.container form .btn {
+  width: 50%;
+}
+.container form .btn button {
+  width: 100%;
+  border-style: none;
+  color: white;
+  font-size: large;
+  background-color: #580062;
+  padding: 12px;
+  border-radius: 15px;
+}/*# sourceMappingURL=register.css.map */

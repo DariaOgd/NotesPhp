@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    .sidebar {
+        background-color: #007673;
+        height: 100vh;
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+  
+        .profile, .add-new{
+          text-decoration: none;
+          color: white;
+        }
+  
+        .profile{
+          background-color: white;
+          color: black;
+          padding: 20px;
+          width: 100%;
+          
+        }
+  
+     
+        .log-out{
+          text-align: center;
+            padding: 20px;
+            width: 100%;
+            border: none;
+            background-color: #fff9da;
+            border-radius: 20px;
+  
+        }
+    
+  
+    
+        .btn {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+    
+          button {
+            font-size: large;
+            width: 100%;
+            border: none;
+            background-color: #007673;
+            color: white;
+          }
+    
+          .main {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+          }
+        }
+      }
+
+
+    .main{
+        flex: 7;
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+
+        h2{
+            padding-bottom: 20px;
+        }
+        .btn{
+            padding-bottom: 20px;
+            display: flex;
+            justify-content: right;
+            gap: 30px;
+
+            
+
+            #delete{
+                color: rgb(220, 115, 115);
+                border: none;
+
+                &:hover{
+                    color:rgb(228, 93, 93) ;
+                    cursor: pointer;
+                }
+            }
+
+            
+            
+        }
+
+
+
+        form{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            #update{
+
+                    border: none;
+                    padding: 16px;
+
+                    color: white;
+                    cursor: pointer;
+                    background-color: #ca93d0;
+
+                    &:hover{
+                        background-color: #580062;
+                    }
+            }
+            #title{
+                margin-top: 10px;
+                border: none;
+                border-bottom: 1px solid black;
+                width: 100%;
+                padding-bottom: 10px;
+
+            }
+
+            #content{
+                flex-grow: 1; /* Add this line */
+
+                border: none;
+                width: 100%;
+                height: max-content;
+                padding: 10px;
+                background-color: rgb(240, 236, 236);
+            }
+        }
+    }
+
+
+
+}

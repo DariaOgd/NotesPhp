@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+}
+.container .sidebar {
+  background-color: #007673;
+  height: 100vh;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .sidebar .profile, .container .sidebar .add-new {
+  text-decoration: none;
+  color: white;
+}
+.container .sidebar .profile {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 100%;
+}
+.container .sidebar .log-out {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  background-color: #fff9da;
+  border-radius: 20px;
+}
+.container .sidebar .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .sidebar .btn button {
+  font-size: large;
+  width: 100%;
+  border: none;
+  background-color: #007673;
+  color: white;
+}
+.container .sidebar .btn .main {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.container .main {
+  flex: 7;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+.container .main h2 {
+  padding-bottom: 20px;
+}
+.container .main .btn {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: right;
+  gap: 30px;
+}
+.container .main .btn #delete {
+  color: rgb(220, 115, 115);
+  border: none;
+}
+.container .main .btn #delete:hover {
+  color: rgb(228, 93, 93);
+  cursor: pointer;
+}
+.container .main form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .main form #update {
+  border: none;
+  padding: 16px;
+  color: white;
+  cursor: pointer;
+  background-color: #ca93d0;
+}
+.container .main form #update:hover {
+  background-color: #580062;
+}
+.container .main form #title {
+  margin-top: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding-bottom: 10px;
+}
+.container .main form #content {
+  flex-grow: 1; /* Add this line */
+  border: none;
+  width: 100%;
+  height: -moz-max-content;
+  height: max-content;
+  padding: 10px;
+  background-color: rgb(240, 236, 236);
+}/*# sourceMappingURL=notesingle.css.map */

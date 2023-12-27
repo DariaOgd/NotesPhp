@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  $base: 50%; // Adjust this value to control pastel lightness
+  
+  @function random_pastel() {
+    $r: random(255);
+    $g: random(255);
+    $b: random(255);
+    // Mix the color with white to create a pastel effect
+    $color: mix(rgb($r, $g, $b), #c2e9eb96, $base);
+    @return $color;
+  }
+  
+  .container {
+    height: 100vh;
+    display: flex;
+  
+    .sidebar {
+      background-color: #007673;
+      height: 100vh;
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .profile, .add-new{
+        text-decoration: none;
+        color: white;
+      }
+
+      .profile{
+        background-color: white;
+        color: black;
+        padding: 20px;
+        width: 100%;
+        
+      }
+
+   
+      .log-out{
+        text-align: center;
+          padding: 20px;
+          width: 100%;
+          border: none;
+          background-color: #fff9da;
+          border-radius: 20px;
+
+      }
+  
+
+  
+      .btn {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+  
+        button {
+          font-size: large;
+          width: 100%;
+          border: none;
+          background-color: #007673;
+          color: white;
+        }
+  
+        .main {
+          background-color: white;
+          color: black;
+          border-radius: 20px;
+        }
+      }
+    }
+  
+    .main {
+      flex: 7;
+      padding: 2rem;
+      a{
+        text-decoration: none;
+        color: rgb(36, 35, 35);
+      }
+  
+      h2 {
+        padding-bottom: 30px;
+      }
+  
+      .grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+        @for $i from 1 through 20 { // Adjust the number of iterations as needed
+          .test:nth-child(#{$i}) {
+            padding: 3rem;
+            background-color: random_pastel();
+            text-align: center;
+            cursor: pointer;
+            
+          }
+        }
+      }
+    }
+  }
+  
+
+
+  @media screen and (max-width: 767px) {
+
+    .conatiner{
+      display: flex;
+
+      .sidebar{
+        flex: 1;
+      }
+      .main{
+        flex: 6;
+      }
+    }
+  }

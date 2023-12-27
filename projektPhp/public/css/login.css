@@ -1,0 +1,89 @@
+* {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.container .left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.container .left img {
+  padding-top: 5rem;
+  padding: 2rem;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  max-height: 100%; /* Ensure the image doesn't exceed its container */
+  width: auto; /* Let the width adjust based on the container size */
+  height: auto; /* Let the height adjust based on the container size */
+  padding: 2rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.container .right {
+  padding: 6rem;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .right .log-in {
+  height: 50%;
+  width: 80%;
+}
+.container .right .log-in form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+.container .right .log-in form .btn {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.container .right .log-in form .btn .btn-log {
+  color: white;
+  font-size: large;
+  background-color: #580062;
+}
+.container .right .log-in form .btn button {
+  padding: 15px;
+  border-radius: 20px;
+  border-style: none;
+}
+.container .right .log-in form input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+.container .right .top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.container .right .top h2 {
+  font-size: 3rem;
+}
+
+form .error .alert {
+  color: #ff0000;
+  padding: 10px 20px;
+  background-color: #ffcccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=login.css.map */

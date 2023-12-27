@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+}
+.container .sidebar {
+  background-color: #007673;
+  height: 100vh;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .sidebar .profile, .container .sidebar .add-new {
+  text-decoration: none;
+  color: white;
+}
+.container .sidebar .profile {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 100%;
+}
+.container .sidebar .log-out {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  background-color: #fff9da;
+  border-radius: 20px;
+}
+.container .sidebar .btn {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container .sidebar .btn button {
+  font-size: large;
+  width: 100%;
+  border: none;
+  background-color: #007673;
+  color: white;
+}
+.container .sidebar .btn .main {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.container .main {
+  flex: 7;
+  padding: 2rem;
+}
+.container .main a {
+  text-decoration: none;
+  color: rgb(36, 35, 35);
+}
+.container .main h2 {
+  padding-bottom: 30px;
+}
+.container .main .grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container .main .grid .test:nth-child(1) {
+  padding: 3rem;
+  background-color: rgba(94, 231, 95, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(2) {
+  padding: 3rem;
+  background-color: rgba(196, 248, 159, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(3) {
+  padding: 3rem;
+  background-color: rgba(63, 139, 210, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(4) {
+  padding: 3rem;
+  background-color: rgba(118, 202, 184, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(5) {
+  padding: 3rem;
+  background-color: rgba(84, 174, 97, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(6) {
+  padding: 3rem;
+  background-color: rgba(195, 189, 213, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(7) {
+  padding: 3rem;
+  background-color: rgba(68, 163, 104, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(8) {
+  padding: 3rem;
+  background-color: rgba(139, 117, 167, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(9) {
+  padding: 3rem;
+  background-color: rgba(158, 201, 217, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(10) {
+  padding: 3rem;
+  background-color: rgba(80, 157, 86, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(11) {
+  padding: 3rem;
+  background-color: rgba(180, 151, 141, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(12) {
+  padding: 3rem;
+  background-color: rgba(187, 237, 86, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(13) {
+  padding: 3rem;
+  background-color: rgba(167, 230, 188, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(14) {
+  padding: 3rem;
+  background-color: rgba(229, 79, 85, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(15) {
+  padding: 3rem;
+  background-color: rgba(90, 232, 88, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(16) {
+  padding: 3rem;
+  background-color: rgba(87, 216, 108, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(17) {
+  padding: 3rem;
+  background-color: rgba(195, 214, 193, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(18) {
+  padding: 3rem;
+  background-color: rgba(182, 71, 236, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(19) {
+  padding: 3rem;
+  background-color: rgba(190, 127, 242, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+.container .main .grid .test:nth-child(20) {
+  padding: 3rem;
+  background-color: rgba(236, 104, 181, 0.7941176471);
+  text-align: center;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .conatiner {
+    display: flex;
+  }
+  .conatiner .sidebar {
+    flex: 1;
+  }
+  .conatiner .main {
+    flex: 6;
+  }
+}/*# sourceMappingURL=profile.css.map */
