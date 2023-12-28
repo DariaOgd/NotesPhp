@@ -71,133 +71,171 @@
 }
 .container .main .grid .test:nth-child(1) {
   padding: 3rem;
-  background-color: rgba(94, 231, 95, 0.7941176471);
+  background-color: rgba(64, 247, 246, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(2) {
   padding: 3rem;
-  background-color: rgba(196, 248, 159, 0.7941176471);
+  background-color: rgba(207, 193, 94, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(3) {
   padding: 3rem;
-  background-color: rgba(63, 139, 210, 0.7941176471);
+  background-color: rgba(150, 233, 107, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(4) {
   padding: 3rem;
-  background-color: rgba(118, 202, 184, 0.7941176471);
+  background-color: rgba(223, 197, 145, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(5) {
   padding: 3rem;
-  background-color: rgba(84, 174, 97, 0.7941176471);
+  background-color: rgba(141, 155, 102, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(6) {
   padding: 3rem;
-  background-color: rgba(195, 189, 213, 0.7941176471);
+  background-color: rgba(197, 107, 116, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(7) {
   padding: 3rem;
-  background-color: rgba(68, 163, 104, 0.7941176471);
+  background-color: rgba(224, 150, 141, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(8) {
   padding: 3rem;
-  background-color: rgba(139, 117, 167, 0.7941176471);
+  background-color: rgba(226, 98, 175, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(9) {
   padding: 3rem;
-  background-color: rgba(158, 201, 217, 0.7941176471);
+  background-color: rgba(222, 199, 110, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(10) {
   padding: 3rem;
-  background-color: rgba(80, 157, 86, 0.7941176471);
+  background-color: rgba(68, 87, 234, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(11) {
   padding: 3rem;
-  background-color: rgba(180, 151, 141, 0.7941176471);
+  background-color: rgba(116, 237, 243, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(12) {
   padding: 3rem;
-  background-color: rgba(187, 237, 86, 0.7941176471);
+  background-color: rgba(231, 213, 171, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(13) {
   padding: 3rem;
-  background-color: rgba(167, 230, 188, 0.7941176471);
+  background-color: rgba(79, 153, 96, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(14) {
   padding: 3rem;
-  background-color: rgba(229, 79, 85, 0.7941176471);
+  background-color: rgba(229, 165, 223, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(15) {
   padding: 3rem;
-  background-color: rgba(90, 232, 88, 0.7941176471);
+  background-color: rgba(184, 229, 219, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(16) {
   padding: 3rem;
-  background-color: rgba(87, 216, 108, 0.7941176471);
+  background-color: rgba(135, 99, 98, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(17) {
   padding: 3rem;
-  background-color: rgba(195, 214, 193, 0.7941176471);
+  background-color: rgba(190, 105, 230, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(18) {
   padding: 3rem;
-  background-color: rgba(182, 71, 236, 0.7941176471);
+  background-color: rgba(233, 155, 164, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(19) {
   padding: 3rem;
-  background-color: rgba(190, 127, 242, 0.7941176471);
+  background-color: rgba(70, 183, 207, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 .container .main .grid .test:nth-child(20) {
   padding: 3rem;
-  background-color: rgba(236, 104, 181, 0.7941176471);
+  background-color: rgba(209, 137, 131, 0.7941176471);
   text-align: center;
   cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
-  .conatiner {
+  .container {
     display: flex;
+    flex-direction: column;
   }
-  .conatiner .sidebar {
-    flex: 1;
+  .sidebar, .main {
+    flex: initial;
+    width: 100%;
   }
-  .conatiner .main {
-    flex: 6;
+  .sidebar {
+    order: 2;
+    padding: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebar .btn {
+    width: 100%;
+    display: flex;
+    height: 60%;
+  }
+  .sidebar .btn .profile {
+    text-align: center;
+  }
+  .sidebar .btn .add-new {
+    padding-bottom: 30px;
+    text-align: center;
+  }
+  .sidebar .log-out {
+    border-radius: 0;
+    padding: 10px;
+  }
+  .sidebar form {
+    width: 100%;
+    border-radius: 0;
+  }
+  .main {
+    order: 1;
+    padding: 20px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .test {
+    margin-bottom: 20px;
   }
 }/*# sourceMappingURL=profile.css.map */

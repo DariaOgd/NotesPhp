@@ -105,3 +105,49 @@ form .error .alert {
     border-radius: 5px;
     margin-bottom: 5px;
 }
+
+
+
+
+@media screen and (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+        .right {
+            padding: 2rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+    
+            .top {
+                padding-bottom: 1rem;
+                text-align: center;
+            }
+    
+            .log-in {
+                width: 100%;
+                form {
+                    width: 100%;
+                    .error,
+                    .email,
+                    .password,
+                    .btn {
+                        width: 100%;
+                    }
+                    input {
+                        padding: 0.5rem;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}

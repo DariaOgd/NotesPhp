@@ -86,4 +86,42 @@ form .error .alert {
   background-color: #ffcccc;
   border-radius: 5px;
   margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .container .right {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container .right .top {
+    padding-bottom: 1rem;
+    text-align: center;
+  }
+  .container .right .log-in {
+    width: 100%;
+  }
+  .container .right .log-in form {
+    width: 100%;
+  }
+  .container .right .log-in form .error,
+  .container .right .log-in form .email,
+  .container .right .log-in form .password,
+  .container .right .log-in form .btn {
+    width: 100%;
+  }
+  .container .right .log-in form input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=login.css.map */
