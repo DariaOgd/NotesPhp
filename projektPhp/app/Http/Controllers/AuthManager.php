@@ -6,7 +6,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use MongoDB\Driver\Session;
+
 
 
 class AuthManager extends Controller
@@ -32,7 +32,7 @@ class AuthManager extends Controller
         }
     
        
-        return redirect()->route('login')->with('error', 'Please log in to view your profile.');
+        return redirect()->route('login')->with('error', 'Zaloguj się.');
     }
     
 
@@ -47,7 +47,7 @@ class AuthManager extends Controller
         if(Auth::attempt($credenitals)){
             return redirect()->intended('profile');
         }
-        return redirect(route('login'))->with('error', "Login details are not valid");
+        return redirect(route('login'))->with('error', "Dane niepoprawne");
     }
 
 
@@ -66,10 +66,10 @@ class AuthManager extends Controller
         $user = User::create($data);
 
         if(!$user){
-            return redirect(route('register'))->with('error', "Registration failed try again");
+            return redirect(route('register'))->with('error', "Rejstracja niepowiodła się");
 
         }
-        return redirect(route('login'))->with('success', "Everything good");
+        return redirect(route('login'))->with('success', "Wszystko dobrze");
 
 
     }

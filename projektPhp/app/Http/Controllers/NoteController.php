@@ -72,14 +72,6 @@ public function update(Request $request, $id)
 }
 
 
-public function getFromDatabase($id)
-{
-    return Cache::remember('cache_key_' . $id, 60, function () use ($id) {
-        
-        return Note::find($id);
-    });
-}
-
 
 
 

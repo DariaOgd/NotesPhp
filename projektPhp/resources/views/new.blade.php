@@ -8,7 +8,7 @@
 @include('sidebar')
     <div class="main">
     <form method="POST" action="{{ route('add-note') }}">
-    @csrf <!-- Zabezpieczenie przed CSRF -->
+    @csrf 
 
     <div class="add">
         <button type="submit" class="add">Zapisz</button>

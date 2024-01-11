@@ -37,7 +37,6 @@ Route::delete('/notes/{id}', [\App\Http\Controllers\NoteController::class, 'dest
 
 Route::put('/notes/{id}', [\App\Http\Controllers\NoteController::class, 'update'])->name('note.update');
 
-Route::post('/translate', [\App\Http\Controllers\NoteController::class, 'translate']);
 
 
 
