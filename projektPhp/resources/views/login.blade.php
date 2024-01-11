@@ -10,8 +10,8 @@
     </div>
     <div class="right">
         <div class="top">
-            <h2>Welcome back</h2>
-            <p>Eneter your credentials</p>
+            <h2>Witaj ponownie</h2>
+            <p>Wpisz swoje dane</p>
         </div>
         <div class="log-in">
 
@@ -41,11 +41,11 @@
                 </div>
                 <div class="password">
                     <label for="inputPassword"></label>
-                    <input type="password" class="form-control" placeholder="Password:" name="password">
+                    <input type="password" class="form-control" placeholder="Hasło:" name="password">
                 </div>
                 <div class="btn">
-                    <button class="btn-log">Log in</button>
-                    <a href="{{ route('register') }}" class="btn-register">Don't have an account? Click here</a>
+                    <button class="btn-log">Zaloguj się</button>
+                    <a href="{{ route('register') }}" class="btn-register">Załóż konto</a>
 
                 </div>
 

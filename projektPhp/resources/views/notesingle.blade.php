@@ -13,7 +13,7 @@
                 <form method="POST" action="{{ route('note.destroy', $note->id) }}">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="fas fa-trash" id="delete" onclick="return confirm('Are you sure?')"></button>
+                    <button type="submit" class="fas fa-trash" id="delete" onclick="return confirm('Usunąć?')"></button>
                 </form>
 
             </div>

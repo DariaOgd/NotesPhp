@@ -31,7 +31,7 @@
         </div>
         <div class="name">
                 <label for="Name"></label>
-                <input type="name" class="form-control" placeholder="Name:" name="name">
+                <input type="name" class="form-control" placeholder="Imie:" name="name">
         </div>
         <div class="email">
                 <label for="inputEmail"></label>
@@ -39,12 +39,12 @@
         </div>
         <div class="password">
                 <label for="inputPassword"></label>
-                <input type="password" class="form-control" placeholder="Password:" name="password">
+                <input type="password" class="form-control" placeholder="Hasło" name="password">
         </div>
 
 
         <div class="btn">
-                <button class="btn-register" type="submit">Create account</button>
+                <button class="btn-register" type="submit">Stwórz konto</button>
 
          </div>
 
