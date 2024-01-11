@@ -21,17 +21,17 @@ class AuthManager extends Controller
 
     function profile()
     {
-        // Check if the user is authenticated
+       
         if (Auth::check()) {
-            // If authenticated, fetch user data
+            
             $user = Auth::user();
-            $notes = $user->notes; // Assuming a relationship exists between User and Note models
+            $notes = $user->notes; 
     
-            // Return the profile view with the fetched data
+           
             return view('profile', compact('user', 'notes'));
         }
     
-        // If the user is not authenticated, redirect to the login page or handle it accordingly
+       
         return redirect()->route('login')->with('error', 'Please log in to view your profile.');
     }
     

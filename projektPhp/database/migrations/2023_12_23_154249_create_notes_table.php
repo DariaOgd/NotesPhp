@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('title');
             $table->text('content');
-            // Dodaj inne pola notatki według potrzeb
+
             $table->timestamps();
         });
     }

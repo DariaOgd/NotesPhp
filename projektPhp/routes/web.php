@@ -22,10 +22,9 @@ Route::get('/register', [\App\Http\Controllers\AuthManager::class, 'register'])-
 Route::post('/register', [\App\Http\Controllers\AuthManager::class, 'registerPost']) -> name('register.post');
 Route::get('/logout', [\App\Http\Controllers\AuthManager::class, 'logout'])->name('logout');
 
-// Route::get("/profile", 'TaskControloler@profile');
 Route::get('/profile', [\App\Http\Controllers\TaskController::class, 'profile']) -> name('profile');
 Route::get('/new', [\App\Http\Controllers\TaskController::class, 'new']) -> name('new');
-// Route::get("/new", 'TaskControloler@new');
+
 
 
 
@@ -47,8 +46,5 @@ Route::get('/profile', [\App\Http\Controllers\AuthManager::class, 'profile'])->n
 
 Route::get('/logout', [\App\Http\Controllers\AuthManager::class, 'logout'])->name('logout');
 
-
-
-// Other routes...
 
 

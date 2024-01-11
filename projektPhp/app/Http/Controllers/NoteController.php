@@ -12,22 +12,21 @@ class NoteController extends Controller
 
     public function store(Request $request)
     {
-        // Walidacja danych wejściowych
+    
         $request->validate([
             'title' => 'required',
             'content' => 'required',
             
         ]);
 
-        // Utwórz nową notatkę na podstawie danych z żądania
         $note = new Note();
         $note->title = $request->title;
         $note->content = $request->content;
-        $note->user_id = Auth::id(); // Assign the current user's ID
+        $note->user_id = Auth::id(); 
 
-        $note->save(); // Zapisz notatkę
+        $note->save(); 
 
-        // Możesz także przekierować gdzieś lub zwrócić odpowiedź JSON
+       
         return redirect()->route('profile');
     }
 
@@ -41,7 +40,7 @@ class NoteController extends Controller
     public function show($id)
     {
         $note = Note::findOrFail($id);
-        return view('notesingle', ['note' => $note]); // Zmiana 'note.show' na 'notesingle'
+        return view('notesingle', ['note' => $note]); 
     }
     
 
@@ -58,13 +57,13 @@ public function update(Request $request, $id)
 {
     $note = Note::findOrFail($id);
 
-    // Validation, similar to store method
+   
     $request->validate([
         'title' => 'required',
         'content' => 'required',
     ]);
 
-    // Update note
+   
     $note->title = $request->title;
     $note->content = $request->content;
     $note->save();
@@ -76,7 +75,7 @@ public function update(Request $request, $id)
 public function getFromDatabase($id)
 {
     return Cache::remember('cache_key_' . $id, 60, function () use ($id) {
-        // Wykonaj operację pobrania danych z bazy
+        
         return Note::find($id);
     });
 }
@@ -85,7 +84,6 @@ public function getFromDatabase($id)
 
 
 
-//api use
 
 
 
